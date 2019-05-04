@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
 
 *{
     margin: 0;  
@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -34,6 +34,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     cursor: pointer;
+    text-shadow: 2px 2px 1px #333;
 }
 
 #nav-menus li.nav-button:hover {
@@ -41,7 +42,7 @@ p {
     transition: .3s ease-in-out;
     background-color: #20639b;
     box-shadow: 3px 5px 10px #333;
-    text-shadow: 2px 2px 1px #333;
+    text-shadow: 0px 0px 0px #333;
 }
 
 #nav-footer {
@@ -55,16 +56,18 @@ p {
 .header-img {
     position: absolute;
     height: 167px!important;
-    width: 178px;
+    width: 199px;
     overflow: hidden;
     top: 88px;
-    left: 33px;
+    left: 23px;
     border-radius: 50%;
 }
 
 .header-img > img {
     height: 240px;
+    width: 240px;
     bottom: 12px;
+    right: 19px;
     position: relative;
 }
 
@@ -80,6 +83,71 @@ p {
 }
 
 .header-name > h1 {
-    top: 6px;
+    top: 8px;
     position: relative;
+}
+
+#home-section {
+    width: 1120px;
+    position: absolute;
+    right: 0;
+    height: 625px;
+    overflow: hidden;
+}
+
+.background {
+    height: 100%;
+}
+
+.background > img {
+    height: 100%;
+    width: 100%;
+    opacity: .80;
+}
+
+.adjectives-tab {
+    height: 135px;
+    position: absolute;
+    width: 395px;
+    top: 110px;
+    right: 0;
+}
+
+.adjectives-tab .adjectives {
+    background-color: #f6d55c;
+    height: 100px;
+    color: #4f4b43;
+}
+
+.adjectives-tab .adjectives > h1 {
+    font-size: 20px;
+    position: relative;
+    top: 17px;
+    left: 25px;
+    font-weight: 700;
+}
+
+.adjectives-tab .adjectives .adjective {
+    position: absolute;
+    top: 48px;
+    left: 100px;
+    font-size: 14px;
+}
+
+.adjectives-tab > .home-btn {
+    position: absolute;
+    right: 0;
+    background: #ed553b;
+    border: none;
+    color: #fff;
+    height: 35px;
+    width: 200px;
+    font-size: 17px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.adjectives-tab > .home-btn:hover {
+    box-shadow: 3px 3px 4px #333;
+    transition: .2s ease-in-out;
 }
