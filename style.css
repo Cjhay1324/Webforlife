@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700i|Open+Sans');
 
 *{
     margin: 0;  
@@ -87,12 +87,19 @@ p {
     position: relative;
 }
 
-#home-section {
+#content-body {
     width: 1120px;
-    position: absolute;
     right: 0;
     height: 625px;
-    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+#home-section {
+    width: 1120px;
+    height: 625px;
+    position: relative;
+    display: block;
 }
 
 .background {
@@ -150,4 +157,40 @@ p {
 .adjectives-tab > .home-btn:hover {
     box-shadow: 3px 3px 4px #333;
     transition: .2s ease-in-out;
+}
+
+#skills-section {
+    height: 625px;
+    width: 1120px;
+    position: relative;
+    display: block;
+}
+
+.section-header {
+    position: relative;
+    width: 224px;
+    height: 58px;
+    margin: 0 auto;
+    text-align: center;
+    top: 30px;
+    color: #173f5f;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.section-header > span {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background-color: #05ddfa;
+    left: 98px;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background-color:#4f4b43;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#ed553b;
 }
