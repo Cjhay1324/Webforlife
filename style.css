@@ -311,6 +311,65 @@ p {
     color: #4f4b43;
 }
 
+.experience {
+    height: 463px;
+    width: 663px;
+    padding: 38px 0px 0px 40px;
+}
+
+.experience > h1 {
+    padding: 0 0 35px 45px;
+}
+
 .experience > h1:first-child {
     font-size: 20px;
+    padding-bottom: 30px!important;
+    padding: 0;
+}
+
+.experience > li {
+    font-size: 18px;
+    line-height: 40px;
+    position: relative;
+    padding: 0px 0px 0px 110px;
+}
+
+.experience > li:After {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #4f4b43;
+    left: 75px;
+    border-radius: 10px;
+    top: 15px;
+}
+
+#aboutme-section {
+    height: 625px;
+    width: 1120px;
+    position: relative;
+    display: block;
+}   
+
+.about {
+    margin-top: 35px;
+    height: 250px;
+    background-color: #94b4ce;
+}
+
+.about > .section-header {
+    color: #fff;    
+}
+
+.about .section-header > span {
+    background-color: #173f5f!important;
+}
+
+.about > p {
+    width: 930px;
+    margin: 38px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
 }
