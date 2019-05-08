@@ -160,7 +160,7 @@ p {
 }
 
 #skills-section {
-    height: 625px;
+    height: 717px;
     width: 1120px;
     position: relative;
     display: block;
@@ -184,6 +184,7 @@ p {
     position: absolute;
     background-color: #05ddfa;
     left: 98px;
+    bottom: 8px;
 }
 
 ::-webkit-scrollbar{
@@ -193,4 +194,123 @@ p {
 
 ::-webkit-scrollbar-thumb{
     background-color:#ed553b;
+}
+
+.skillset-section {
+    width: 896px;
+    height: 575px;
+    margin: 25px 108px;
+    position: relative;
+    top: 34px;
+}
+
+.skillset-section .skillset {
+    width: 405px;
+    display: table;
+    height: 90px;
+    text-align: center;
+    box-shadow: 1px 1px 6px #333;
+    border-radius: 3px;
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.skillset-section .skillset > p {
+    display: table-cell;
+    padding: 31px 70px;
+    font-style: italic;
+    font-size: 21px;
+}
+
+.skillset-section .skillset > h1 {
+    display: table-cell;
+    color: #ccc;
+    font-size: 28px;
+    padding: 14px 45px;
+    text-align: right;
+    width: 100%;
+}
+
+.skillset span {
+    position: absolute;
+    width: 283.5px;
+    height: 6px;
+    background: #f6d55c;
+    bottom: 0;
+    left: 0;
+}
+
+.skillset-section .skillset:nth-child(n) {
+    display: inline-block;
+}
+
+.skillset-section .skillset:nth-child(even) {
+    float:right;
+}
+
+.javascript > span {
+    background-color: #f00;
+    width: 243px;
+}
+
+.cplus > span {
+    background-color: #f00;
+    width: 243px;
+}
+
+.wordpress > span {
+    background-color: #f00;
+    width: 243px;
+}
+
+.java > span {
+    background-color: #f00;
+    width: 243px;
+}
+
+.c > span {
+    background-color: #f00;
+    width: 243px;
+}
+
+.vb > span {
+    width: 324px;
+    background: #3caea3;
+}
+
+.html-css > span {
+    width: 303.75;
+}
+
+#experiences-section {
+    height: 625px;
+    width: 1120px;
+    position: relative;
+    display: block;
+}
+
+.experience-tab {
+    position: relative;
+    width: 1120px;
+    height: 625px;
+}
+
+.experience-tab > img {
+    height: 401.5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.past-experiences {
+    height: 500px;
+    width: 784px;
+    background-color: #f6d55c;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #4f4b43;
+}
+
+.experience > h1:first-child {
+    font-size: 20px;
 }
