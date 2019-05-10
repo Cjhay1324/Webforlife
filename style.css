@@ -45,6 +45,11 @@ p {
     text-shadow: 0px 0px 0px #333;
 }
 
+li.nav-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 #nav-footer {
     position: absolute;
     bottom: 20px;
