@@ -509,3 +509,64 @@ p {
     outline: 0;
     cursor: pointer
 }
+
+.greetings {
+    position: absolute;
+    width: 490px;
+    height: 173px;
+    background: #f6d55c;
+    right: 0;
+    bottom: 36px;
+}
+
+.greetings > h1 {
+    color: #444242;
+    position: relative;
+    left: 70px;
+    top: 18px;
+    font-size: 25px;
+}
+
+.greetings > h1:nth-child(2n+1) {
+    left: 160px;
+    font-size: 40px;
+}
+
+.greetings > h1:nth-child(3n+1) {
+    left: 290px;
+}
+
+.greetings .first:before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background: #444242;
+    left: -35px;
+    top: 14px;
+}
+
+.greetings > p {
+    display: inline-block;
+    color: #444242;
+    position: relative;
+    left: 38px;
+    top: 26px;
+}
+
+.icons {
+    height: 170px;
+    width: 60px;
+    float: right;
+    margin: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icons .icon {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    cursor: pointer;
+}
