@@ -1,3 +1,4 @@
+$(document).ready(function(){
 $('.nav-button a').on('click', function(e) {
     console.log(this.hash);
  if (this.hash !== '') {
@@ -5,11 +6,15 @@ $('.nav-button a').on('click', function(e) {
     
     var hash = this.hash;
     
-    $('html, body, #content-body').animate(
+    $('#content-body').animate(
         {
-       scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top
         },
-        800
-    );
- }
+        500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+            });
+        }
+    });
 });

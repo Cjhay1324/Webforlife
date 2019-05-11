@@ -350,7 +350,7 @@ li.nav-button a {
     top: 15px;
 }
 
-.experience > img {
+.experience .company-logo {
     position: absolute;
     right: 0;
     bottom: 50px;
@@ -360,7 +360,7 @@ li.nav-button a {
     background: #4f4b43;
 }
 
-.experience > img:hover {
+.experience .company-logo:hover {
     box-shadow: 3px 3px 3px #333;
     transition: .2s ease-in-out;
     cursor: pointer;
@@ -574,4 +574,8 @@ li.nav-button a {
     height: 40px;
     padding: 6px;
     cursor: pointer;
+}
+
+.message-area .sendbtn:hover {
+    color: #f6d55c;
 }
