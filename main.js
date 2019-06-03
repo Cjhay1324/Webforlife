@@ -1,20 +1,26 @@
-$(document).ready(function(){
-$('.nav-button a').on('click', function(e) {
-    console.log(this.hash);
- if (this.hash !== '') {
-    e.preventDefault();
+function smoothScroll(target, duration){
+    var target = document.querySelector(target);
+    var targetPosition = target.getBoundingClientRect().top;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
     
-    var hash = this.hash;
+    function animation(currentTime){
+        if(startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0,run);
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    }
     
-    $('#content-body').animate(
-        {
-            scrollTop: $(hash).offset().top
-        },
-        500, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-            });
-        }
-    });
-});
+    function ease(t, b, c, d){
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t  + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+    
+    requestAnimationFrame(animation);
+}
+
+smoothScroll('#skillset-section', 1000);
