@@ -1,9 +1,17 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+$(document).ready(function(){
+	$(".nav-button").on( "click", function(event){
+		
+		var thisElement = $(this).children("a");
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+		if(thisElement.attr('href') != "") {
+
+			event.preventDefault();
+
+			var hash = thisElement.attr('href');
+
+			document.querySelector(thisElement.attr('href')).scrollIntoView({
+            	behavior: 'smooth'
+        	});
+		}
+	});
 });

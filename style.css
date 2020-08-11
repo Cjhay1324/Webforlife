@@ -254,8 +254,8 @@ li.nav-button a {
 }
 
 .javascript > span {
-    background-color: #f00;
-    width: 243px;
+    width: 324px;
+    background: #3caea3;
 }
 
 .cplus > span {
@@ -269,8 +269,8 @@ li.nav-button a {
 }
 
 .java > span {
-    background-color: #f00;
-    width: 243px;
+    width: 324px;
+    background: #3caea3;
 }
 
 .c > span {
